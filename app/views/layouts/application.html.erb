@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Murphy</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<!-- boootstrap導入部分 -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarEexample1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><strong>Murphy</strong></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarEexample1">
+      <% if user_signed_in? %>
+        <span><strong><%= current_user.nickname %>さん</strong>
+          <ul class="nav navbar-nav">
+            <li><a class="post" href="/tweets/new">投稿する</a></li>
+            <li><a href="/users/<%= current_user.id%>">マイページ</a></li>
+            <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></a></li>
+          </ul>
+        </span>
+      <% else %>
+        <span>
+          <ul class="nav navbar-nav">
+            <li><%= link_to "ログイン", new_user_session_path, class: 'post' %></li>
+            <li><%= link_to "新規登録", new_user_registration_path, class: 'post' %></li>
+          </ul>
+        </span>
+      <% end %>
+    </div>
+  </div>
+</nav>
+
+
+<%= yield %>
+
+</body>
+</html>

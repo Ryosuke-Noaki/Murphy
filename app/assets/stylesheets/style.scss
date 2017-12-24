@@ -1,0 +1,65 @@
+/*
+ * "ほのか明朝" licensed under the IPA Font License Agreement v1.0
+ * http://fontfree.me/966（配布元のURL）
+ * http://ipafont.ipa.go.jp/（IPAフォントのURL）
+ * http://ipafont.ipa.go.jp/ipa_font_license_v1.html（IPAフォントライセンスv1.0のURL）
+ */
+@font-face {
+    font-family: 'ほのか明朝';
+    src: url('font_1_honokamin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body,html {
+margin: 0 auto;
+height: 100%;
+background-image: url("http://img.kb-cdn.com/imgviewer/NVpIM2ptOHhYRzVmUk5rM1NrNlFxYVV6enV4aGk2UFRJMmxPckdDUUVNWWhqNmNMdnQ1SzZrU2pjTnFpSWFmMmtOYXVZcHpvQ1BnSWRraDJBQWI3T2dtOG1LdE5oNkdmUUsvR1lkUTNBK2VCQ1N5SVFtK3VwdTkwQ05sR1hDSnJaY2I1elpDS0Y5VUJqSFJyWEJtVHdRQlhLWW0yeFkvYWQ0ZFFob2dVWlc4NUdwd2Y3ZlQ3SGIvT2d4WUxWWU9KNjJlVHRrTlJnaE0vMkdjbzZLM1AzTHY5RnJSUWhVS0tvb1h5a0NZaEw1bz0=?square=0")
+
+}
+
+
+h1,h2,h3,h4,h5,h6,body {
+  line-height: 1.57;
+  letter-spacing: 0.15em;
+  font-size: 16px;
+  color: #0000000;
+  font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.balloon1-right {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 15px 1.5em 0 auto;
+  margin-bottom: 10px;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #FFFFDD;
+}
+
+.balloon1-right p {
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.more_list {
+  width:0 0 0 40px;
+}
+
+.contents {
+  text-align: center;
+}
+
+btn-group {
+  text-align: left;
+}

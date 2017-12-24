@@ -1,0 +1,10 @@
+<div class="contents row">
+  <p><%= @nickname %>さんの投稿</p>
+    <% @tweets.each do |tweet| %>
+      <div class="balloon1-right col-sm-6 col-sm-offset-3">
+        <div class="content_post">
+          <%= simple_format(tweet.text) %>
+        </div>
+      </div>
+    <% end %>
+</div>
