@@ -2,7 +2,7 @@
 <div class="contents" >
   <% @tweets.each do |tweet| %>
     <div class="balloon1-right col-sm-6 col-sm-offset-3">
-          <p><%= simple_format(tweet.text) %></p>
+        <p><%= simple_format(tweet.text) %></p>
           <span class="name">
               <%= tweet.user.nickname %>さん
           </span>
@@ -22,4 +22,5 @@
     </div>
   <% end %>
 </div>
+
 
